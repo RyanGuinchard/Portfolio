@@ -71,48 +71,58 @@
         <h2>Projects</h2>
         <div class="project">
           <h3>Simple Tic Tac Toe</h3>
-          <img class="project-photos hover-shadow" src="images/TicTacToe.png" alt="TicTacToe">
+          <img
+            class="project-photos hover-shadow"
+            src="images/TicTacToe.png"
+            alt="TicTacToe"
+          />
           <p>Check out GitHub for repository!</p>
         </div>
       </div>
       <div class="contact" id="ContactID">
-        <h2>Contact Me!</h2>
-        <div class="form-box">
-          <form name="contact" method="post" action="mailto:ryanguinchard9@hotmail.com">
-            <label>Name</label><br />
-            <input type="text" name="name" /><br />
-            <label>Subject</label><br />
-            <input type="text" name="subject" /><br />
-            <label>Phone Number</label><br />
-            <input type="text" name="phone" /><br />
-            <label>Message</label><br />
-            <textarea name="message" rows="1" cols="30"></textarea><br />
-            <input class="btn" type="submit" name="send" value="Send Message" />
-          </form>
+        <div class="row">
+          <div class="contact-left">
+            <h2>Contact Me</h2>
+            <p>ryanguinchard9@hotmail.com</p>
+            <p>709-765-2219</p>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ryan-guinchard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="images/Linkedin.png" alt="LinkedIn"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/RyanGuinchard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="images/github.png" alt="GitHub"
+                /></a>
+              </li>
+            </ul>
+            <a id="btn" type="submit">Download CV</a>
+          </div>
+          <div class="form-box">
+            <form
+              name="contact"
+              method="post"
+              action="mailto:ryanguinchard9@hotmail.com"
+            >
+              <input type="text" placeholder="Your Name" /><br />
+              <input type="text" placeholder="Subject" /><br />
+              <textarea rows="1" cols="30" placeholder="Your Message"></textarea
+              ><br />
+              <input
+                id="btn"
+                type="submit"
+              />
+            </form>
+          </div>
         </div>
       </div>
     </main>
-    <footer>
-      <div class="footer-container">
-        <ul class="social-links">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ryan-guinchard/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/Linkedin.png" alt="LinkedIn"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/RyanGuinchard"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/github.png" alt="GitHub"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
   </body>
 </html>
