@@ -116,6 +116,7 @@ main p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: flex-end;
   width: 100%;
   max-width: 400px;
   margin-top: 30px;
@@ -198,37 +199,56 @@ ul li {
 }
 
 .contact {
-  display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
+  max-width: 1200px;
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 100%;
 }
 
 .contact h2 {
   margin-bottom: 30px;
+  font-size: 22pt;
 }
+
 
 .contact-left {
   margin: 10px;
   padding: 20px;
+  text-align: center;
 }
 
+.icon {
+  float: left;
+  margin-right: 10px;
+}
+
+
 .form-box {
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
   padding: 20px;
   margin: 10px;
 }
+
+
+.contact-left,
+.form-box {
+  width: 100%;
+  padding-bottom: 0;
+}
+
+
+
 
 .contact form {
   display: flex;
   flex-direction: column;
 }
+
 
 
 .form-box input,
@@ -244,7 +264,7 @@ ul li {
   resize: vertical;
 }
 
-#btn {
+.btn, form .btn {
   background-color: #14FFEC;
   color: #323232;
   font-size: 14pt;
@@ -252,26 +272,14 @@ ul li {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16pt;
+  width: 350px;
 }
 
-#btn:hover {
+.btn:hover {
   background-color: #19a7ce;
 }
 
-@media screen and (min-width: 600px) {
-  .form-box {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-footer {
-  background-color: #323232;
-  padding: 5px 0;
-  text-align: center;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  margin-top: auto;
-}
 
 
 .social-links {
@@ -280,6 +288,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 
 .social-links li {
@@ -317,4 +326,29 @@ footer {
     max-width: 50%; /* Adjust the width to fit full monitor screens */
   }
 }
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile Styles for the Contact section */
+@media screen and (max-width: 767px) {
+  .contact .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
